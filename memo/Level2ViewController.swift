@@ -100,17 +100,13 @@ class Level2ViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         }
         else{
-            for i in choises {
-                choises[i] = 0
-                comChoise[i] = 0
-            }
+            choises = [0, 0, 0]
+            comChoise = [0, 0, 0]
             for button in buttons {
                 button.setImage(buttonNormal, for: .normal)
             }
             startButton.isHidden = false
             submitButton.isHidden = true
-            /*buttons[0].setImage(buttonNormal, for: .normal)
-            buttons[1].setImage(buttonNormal, for: .normal)*/
             nextButton.setTitle("Try again", for: .normal)
             let alertController = UIAlertController(title: "Fail!", message:
                 "Try again.", preferredStyle: UIAlertController.Style.alert)
