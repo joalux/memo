@@ -14,6 +14,9 @@ class Level2ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet var buttons: [UIButton]!
     
+    var valuesDavid : String?
+
+    
     var choises: [Int] = [0, 0, 0]
     var comChoise: [Int] = [0, 0, 0]
     var counter = 0

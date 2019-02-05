@@ -17,7 +17,9 @@
 		41F4AB5B220432AF004B38AE /* Level3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB5A220432AF004B38AE /* Level3ViewController.swift */; };
 		41F4AB5D22071707004B38AE /* Level5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB5C22071706004B38AE /* Level5ViewController.swift */; };
 		41F4AB5F22074320004B38AE /* level6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB5E22074320004B38AE /* level6ViewController.swift */; };
-		41F4AB612208700C004B38AE /* level7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB602208700C004B38AE /* level7ViewController.swift */; };
+		41F4AB6522088843004B38AE /* Level7ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB6422088843004B38AE /* Level7ViewController2.swift */; };
+		41F4AB6922098317004B38AE /* Level8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB6822098317004B38AE /* Level8ViewController.swift */; };
+		41F4AB6B220998F5004B38AE /* Level9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AB6A220998F5004B38AE /* Level9ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,9 @@
 		41F4AB5A220432AF004B38AE /* Level3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3ViewController.swift; sourceTree = "<group>"; };
 		41F4AB5C22071706004B38AE /* Level5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level5ViewController.swift; sourceTree = "<group>"; };
 		41F4AB5E22074320004B38AE /* level6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = level6ViewController.swift; sourceTree = "<group>"; };
-		41F4AB602208700C004B38AE /* level7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = level7ViewController.swift; sourceTree = "<group>"; };
+		41F4AB6422088843004B38AE /* Level7ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level7ViewController2.swift; sourceTree = "<group>"; };
+		41F4AB6822098317004B38AE /* Level8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level8ViewController.swift; sourceTree = "<group>"; };
+		41F4AB6A220998F5004B38AE /* Level9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level9ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,6 @@
 		41F4AAD221FDAE0C004B38AE = {
 			isa = PBXGroup;
 			children = (
-				41F4AB602208700C004B38AE /* level7ViewController.swift */,
 				41F4AADD21FDAE0C004B38AE /* memo */,
 				41F4AADC21FDAE0C004B38AE /* Products */,
 			);
@@ -74,6 +77,9 @@
 				41F4AB562200929B004B38AE /* Level4ViewController.swift */,
 				41F4AB5C22071706004B38AE /* Level5ViewController.swift */,
 				41F4AB5E22074320004B38AE /* level6ViewController.swift */,
+				41F4AB6422088843004B38AE /* Level7ViewController2.swift */,
+				41F4AB6822098317004B38AE /* Level8ViewController.swift */,
+				41F4AB6A220998F5004B38AE /* Level9ViewController.swift */,
 				41F4AAE221FDAE0C004B38AE /* Main.storyboard */,
 				41F4AAE521FDAE0D004B38AE /* Assets.xcassets */,
 				41F4AAE721FDAE0D004B38AE /* LaunchScreen.storyboard */,
@@ -155,10 +161,12 @@
 			files = (
 				41F4AB51220058C6004B38AE /* Level1ViewController.swift in Sources */,
 				41F4AB572200929B004B38AE /* Level4ViewController.swift in Sources */,
+				41F4AB6922098317004B38AE /* Level8ViewController.swift in Sources */,
 				41F4AB532200594E004B38AE /* Level2ViewController.swift in Sources */,
-				41F4AB612208700C004B38AE /* level7ViewController.swift in Sources */,
 				41F4AB5D22071707004B38AE /* Level5ViewController.swift in Sources */,
 				41F4AB5F22074320004B38AE /* level6ViewController.swift in Sources */,
+				41F4AB6522088843004B38AE /* Level7ViewController2.swift in Sources */,
+				41F4AB6B220998F5004B38AE /* Level9ViewController.swift in Sources */,
 				41F4AADF21FDAE0C004B38AE /* AppDelegate.swift in Sources */,
 				41F4AB5B220432AF004B38AE /* Level3ViewController.swift in Sources */,
 			);

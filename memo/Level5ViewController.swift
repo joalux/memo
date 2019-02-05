@@ -48,19 +48,67 @@ class Level5ViewController: UIViewController {
                 buttons[i].isEnabled = true
             }
             if randomNumb == 1 {
-                buttons[0].setImage(buttonPressed, for: .normal)
-                comChoise[5] = 1
+               
+                randomNumb = Int.random(in: 1...6)
+                
+                for i in 0...5 {
+                    buttons[i].isEnabled = true
+                }
+                if randomNumb == 1 {
+                    if comChoise[0] == 0{
+                        buttons[0].setImage(buttonPressed, for: .normal)
+                        comChoise[0] = 1
+                        print("com picked button 1")
+                    }
+                    else{
+                        print("com picked button 1 again, picking another")
+                        randomNumb = Int.random(in: 1...10)
+                        print("com picked button ", randomNumb)
+                        buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                        
+                        comChoise[randomNumb] = 1
+                    }
+                    
                 
             }
             else if randomNumb == 2 {
-                buttons[1].setImage(buttonPressed, for: .normal)
-                comChoise[4] = 1
-                
+               
+                    randomNumb = Int.random(in: 1...7)
+                    
+                    for i in 0...6 {
+                        buttons[i].isEnabled = true
+                    }
+                    if randomNumb == 1 {
+                        if comChoise[0] == 0{
+                            buttons[0].setImage(buttonPressed, for: .normal)
+                            comChoise[0] = 1
+                            print("com picked button 1")
+                        }
+                        else{
+                            print("com picked button 1 again, picking another")
+                            randomNumb = Int.random(in: 1...10)
+                            print("com picked button ", randomNumb)
+                            buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                            
+                            comChoise[randomNumb] = 1
+                        }
+                        
             }
             else if randomNumb == 3 {
-                buttons[2].setImage(buttonPressed, for: .normal)
-                comChoise[3] = 1
-                
+                        if comChoise[0] == 0{
+                            buttons[0].setImage(buttonPressed, for: .normal)
+                            comChoise[0] = 1
+                            print("com picked button 1")
+                        }
+                        else{
+                            print("com picked button 1 again, picking another")
+                            randomNumb = Int.random(in: 1...10)
+                            print("com picked button ", randomNumb)
+                            buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                            
+                            comChoise[randomNumb] = 1
+                        }
+
             }
             else if randomNumb == 4 {
                 buttons[3].setImage(buttonPressed, for: .normal)
@@ -76,12 +124,14 @@ class Level5ViewController: UIViewController {
                 buttons[5].setImage(buttonPressed, for: .normal)
                 comChoise[0] = 1
                 
+                }
             }
+                
             x = x + 1
         }
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(hideColor), userInfo: nil, repeats: false)
     }
-    
+        
     @IBAction func button1pressed(_ sender: UIButton) {
         buttons[5].setImage(buttonPressed, for: .normal)
         choises[0] = 1

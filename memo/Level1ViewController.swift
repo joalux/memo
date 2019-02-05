@@ -100,6 +100,16 @@ class Level1ViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToLevel2" {
+            let destinationVC = segue.destination as! Level2ViewController
+            
+            destinationVC.valuesDavid = "David"
+            
+            
+        }
+        
+    }
     
   
 
