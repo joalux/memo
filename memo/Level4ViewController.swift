@@ -48,30 +48,79 @@ class Level4ViewController: UIViewController {
         submitButton.isHidden = false
         var x = 0
         
+        for i in 0...4 {
+            buttons[i].isEnabled = true
+        }
+        
         while x < 2{
             randomNumb = Int.random(in: 1...5)
             
-            for i in 0...4 {
-                buttons[i].isEnabled = true
-            }
+            
             if randomNumb == 1 {
-                buttons[0].setImage(buttonPressed, for: .normal)
-                comChoise[0] = 1
-                print("com picked button 1")
+                if comChoise[0] == 0{
+                    buttons[0].setImage(buttonPressed, for: .normal)
+                    comChoise[0] = 1
+                    print("com picked button 1")
+                }
+                else{
+                    print("com picked button 1 again, picking another")
+                    while randomNumb == 1 {
+                        randomNumb = Int.random(in: 1...5)
+                        print("com picked button ", randomNumb)
+                        buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                    }
+                    randomNumb = randomNumb - 1
+                    comChoise[randomNumb] = 1
+                        
+                }
             }
             else if randomNumb == 2 {
-                buttons[1].setImage(buttonPressed, for: .normal)
-                comChoise[1] = 1
-                print("com picked button 2")
+                if comChoise[1] == 0{
+                    buttons[1].setImage(buttonPressed, for: .normal)
+                    comChoise[1] = 1
+                    print("com picked button 2")
+                }
+                else{
+                    while randomNumb == 1 {
+                        randomNumb = Int.random(in: 0...4)
+                        print("com picked button ", randomNumb)
+                        buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                    }
+                    //randomNumb = randomNumb - 1
+                    comChoise[randomNumb] = 1
+                }
             }
             else if randomNumb == 3 {
-                buttons[2].setImage(buttonPressed, for: .normal)
-                comChoise[2] = 1
-                print("com picked button 3")
+                if comChoise[2] == 0{
+                    buttons[2].setImage(buttonPressed, for: .normal)
+                    comChoise[2] = 1
+                    print("com picked button 3")
+                }
+                else{
+                    print("com picked button 3 again, picking another")
+                    randomNumb = Int.random(in: 1...6)
+                    print("com picked button ", randomNumb)
+                    
+                    buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                    
+                    comChoise[randomNumb] = 1
+                }
             }
             else if randomNumb == 4 {
-                buttons[3].setImage(buttonPressed, for: .normal)
-                comChoise[3] = 1
+                if comChoise[3] == 0{
+                    buttons[3].setImage(buttonPressed, for: .normal)
+                    comChoise[3] = 1
+                    print("com picked button 4")
+                }
+                else{
+                    print("com picked button 3 again, picking another")
+                    randomNumb = Int.random(in: 1...6)
+                    print("com picked button ", randomNumb)
+                    
+                    buttons[randomNumb].setImage(buttonPressed, for: .normal)
+                    
+                    comChoise[randomNumb] = 1
+                }
                 print("com picked button 4")
             }
             else if randomNumb == 5 {

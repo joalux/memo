@@ -43,6 +43,10 @@ class Level7ViewController2: UIViewController {
         submitButton.isHidden = false
         var x = 0
         
+        for i in 0...7 {
+            buttons[i].isEnabled = true
+        }
+        
         while x < 3 {
             randomNumb = Int.random(in: 1...8)
             
@@ -54,7 +58,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 1 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
                     
@@ -70,7 +74,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 2 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
@@ -85,7 +89,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 3 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
@@ -100,7 +104,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 4 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
@@ -115,7 +119,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 5 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
@@ -130,7 +134,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 6 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
@@ -146,7 +150,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 7 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)
@@ -162,7 +166,7 @@ class Level7ViewController2: UIViewController {
                 }
                 else{
                     print("com picked button 8 again, picking another")
-                    randomNumb = Int.random(in: 1...10)
+                    randomNumb = Int.random(in: 1...8)
                     print("com picked button ", randomNumb)
                     
                     buttons[randomNumb].setImage(buttonPressed, for: .normal)

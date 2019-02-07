@@ -41,13 +41,14 @@ class Level9ViewController: UIViewController {
         submitButton.isHidden = false
         var x = 0
         
+        for i in 0...9 {
+            buttons[i].isEnabled = true
+        }
         
         while x < 4 {
             randomNumb = Int.random(in: 1...10)
             
-            for i in 0...9 {
-                buttons[i].isEnabled = true
-            }
+            
             if randomNumb == 1 {
                 if comChoise[0] == 0{
                     buttons[0].setImage(buttonPressed, for: .normal)
