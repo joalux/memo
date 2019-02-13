@@ -34,7 +34,6 @@ class Level10ViewController: UIViewController {
                 buttons[i].isEnabled = false
             }
 
-        // Do any additional setup after loading the view.
     }
     @IBAction func nextLevel(_ sender: Any) {
     }
