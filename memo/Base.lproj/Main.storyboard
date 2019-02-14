@@ -67,22 +67,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buttons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnK-WO-ydL">
-                                <rect key="frame" x="41" y="548" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZC-1d-h3I">
-                                <rect key="frame" x="143" y="548" width="62" height="21"/>
+                                <rect key="frame" x="145" y="575" width="62" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exQ-fM-qPm">
-                                <rect key="frame" x="260" y="548" width="38" height="21"/>
+                                <rect key="frame" x="262" y="575" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -114,72 +107,36 @@
                                     <action selector="amoTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="XnH-PI-0KQ"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPE-D8-k4n" userLabel="totButons">
-                                <rect key="frame" x="50" y="583" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b9-0D-i8m" userLabel="totChoises">
-                                <rect key="frame" x="155" y="583" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-vG-bBT" userLabel="totTime">
-                                <rect key="frame" x="260" y="583" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvy-dE-Yeg" userLabel="StartEasy">
                                 <rect key="frame" x="75" y="219" width="225" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start" image="greenButton"/>
                                 <connections>
                                     <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MUu-5q-S41"/>
-                                    <action selector="startHard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XlB-N9-pB9"/>
                                     <segue destination="nW9-6t-tVN" kind="show" identifier="segueToLevelBuilder" id="7oL-qe-500"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjz-HP-C4B">
-                                <rect key="frame" x="75" y="218" width="225" height="230"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buttons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnK-WO-ydL">
+                                <rect key="frame" x="41" y="575" width="60" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start" image="redButton"/>
-                                <connections>
-                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="beb-o1-mrS"/>
-                                    <action selector="startHard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAz-sc-blu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-c3-BQl" userLabel="StartCustom">
-                                <rect key="frame" x="75" y="219" width="225" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start" image="orangeButton"/>
-                                <connections>
-                                    <action selector="startCustom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDg-VG-svX"/>
-                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ErV-Qd-Hjd"/>
-                                    <action selector="startHard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wx4-OA-mli"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="buttonSlider" destination="UTp-Nw-ES0" id="3hW-dl-qoo"/>
-                        <outlet property="buttonsLabel" destination="CPE-D8-k4n" id="rYM-oh-8ch"/>
-                        <outlet property="choiseLabel" destination="0b9-0D-i8m" id="ne2-df-YCp"/>
+                        <outlet property="buttonsLabel" destination="QnK-WO-ydL" id="Qjp-xc-3w1"/>
+                        <outlet property="choiseLabel" destination="sZC-1d-h3I" id="ObE-fy-FNp"/>
                         <outlet property="choisesSlider" destination="P3T-am-AhI" id="pHd-nP-4US"/>
                         <outlet property="customMode" destination="WGb-fL-Ini" id="0qQ-Qi-6KC"/>
                         <outlet property="easyMode" destination="7Xz-Lf-aJk" id="scW-ci-pqX"/>
                         <outlet property="hardMode" destination="irD-tK-Fos" id="Hms-kr-cpZ"/>
-                        <outlet property="startCustom" destination="zC1-c3-BQl" id="MKH-d3-yjy"/>
                         <outlet property="startGame" destination="Vvy-dE-Yeg" id="38N-Mu-ExH"/>
-                        <outlet property="startHard" destination="Jjz-HP-C4B" id="5Tr-Kp-kzt"/>
-                        <outlet property="timeLabel" destination="y3x-vG-bBT" id="tcG-pM-Xz8"/>
+                        <outlet property="timeLabel" destination="exQ-fM-qPm" id="05U-0W-2HQ"/>
                         <outlet property="timeSlider" destination="kuH-r1-ZLb" id="UMb-4U-eBc"/>
                     </connections>
                 </viewController>
@@ -315,6 +272,14 @@
                                 <state key="normal" title="Button" image="greenButton"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="nW9-6t-tVN" eventType="touchUpInside" id="oMF-nU-jQw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePc-mo-Ib1" userLabel="Button6">
+                                <rect key="frame" x="104" y="187" width="61" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="greenButton"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="nW9-6t-tVN" eventType="touchUpInside" id="dxT-hh-NcF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qs-PZ-HvK" userLabel="Button7">
@@ -508,12 +473,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePc-mo-Ib1" userLabel="Button6">
-                                <rect key="frame" x="104" y="187" width="61" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBi-jq-xbh">
+                                <rect key="frame" x="44" y="52" width="28" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="greenButton"/>
+                                <state key="normal" title="Button" image="bacarrowbutton"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="nW9-6t-tVN" eventType="touchUpInside" id="dxT-hh-NcF"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yAI-GW-ntH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1694,8 +1659,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bacarrowbutton" width="200" height="200"/>
         <image name="greenButton" width="224" height="224"/>
-        <image name="orangeButton" width="240" height="240"/>
-        <image name="redButton" width="1109.760009765625" height="1152"/>
     </resources>
 </document>

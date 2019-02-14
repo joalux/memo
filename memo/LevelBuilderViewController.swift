@@ -16,10 +16,10 @@ class LevelBuilderViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet var pinchAction: UIPinchGestureRecognizer!
     
-    var counter = 0, levelCount = 0, points = 0
+    var counter = 0, levelCount = 1, points = 0, totalComchoises = 0
     var antBtns = 0, antChss = 0, timeInter = 1.5
     var cstmMode = false, esyMode = false, hrdMode = false
-    
+    var firstTry = true
     
     var timer = Timer()
     let buttonPressed = UIImage(named: "orangeButton.jpg")
@@ -30,8 +30,7 @@ class LevelBuilderViewController: UIViewController {
     var choises = [Int]()
 
     
-    @IBAction func pinchToMain(_ sender: UIPinchGestureRecognizer) {
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +38,9 @@ class LevelBuilderViewController: UIViewController {
         nextButton.isHidden = true
         startButton.isHidden = false
         disableAll()
+        print("choises on load \(antChss)")
+        print("buttons on load \(antBtns)")
+        print("time on load \(timeInter)")
         
     }
     @objc func hideColor() {
@@ -49,25 +51,32 @@ class LevelBuilderViewController: UIViewController {
     func levelBuilder(antButtons: Int, antChoises: Int, levelNr: Int, timeInterVl: Double) {
         levelLabel.text = "Level \(levelNr)"
         resetChoises()
-        antBtns = antButtons - 1
-        antChss = antChoises - 1
+        antBtns = antButtons
+        antChss = antChoises
         
         comChoises = Array(repeating: 0, count: antButtons)
         choises = Array(repeating: 0, count: antButtons)
         print(comChoises)
-        for i in 0...antButtons{
+        
+        for i in 0 ..< antBtns{
             buttons[i].isHidden = false
             buttons[i].isEnabled = true
         }
         for _ in 0...antChoises{
-            let com = Int.random(in: 0...antButtons)
             
+            print("buttons before random \(antButtons)")
+            totalComchoises = antButtons - 1
+            var com = Int.random(in: 0...totalComchoises)
+            
+
             print("Com picked button \(com)")
-            print("Com choises \(comChoises)")
+           
+            print("Total buttons \(antButtons)")
             comChoises[com] = 1
+             print("Com choises \(comChoises)")
             buttons[com].setImage(buttonPressed, for: .normal)
         }
-        timer = Timer.scheduledTimer(timeInterval: timeInter, target: self, selector: #selector(hideColor), userInfo: nil, repeats: false)
+       /* timer = Timer.scheduledTimer(timeInterval: timeInter, target: self, selector: #selector(hideColor), userInfo: nil, repeats: false)*/
         print(comChoises)
     }
     
@@ -108,30 +117,25 @@ class LevelBuilderViewController: UIViewController {
     @IBAction func startRound(_ sender: UIButton) {
         print("starting on level:")
         print(levelCount)
+        
+        print("number of buttons:")
+        print(antBtns)
+ 
+        print("number of choises:")
+        print(antChss)
+        
+        print("time:")
+        print(timeInter)
+        
+        
         timer.invalidate()
         startButton.isHidden = true
         submitButton.isHidden = false
         nextButton.isHidden = true
         
         hideAll()
-        if levelCount == 0{
-            levelBuilder(antButtons: antBtns, antChoises: antChss, levelNr: levelCount, timeInterVl: timeInter)
-        }
-        if levelCount == 1{
-            levelBuilder(antButtons: 8, antChoises: 4, levelNr: 2, timeInterVl: 1.5)
-        }
-        if levelCount == 2{
-            levelBuilder(antButtons: 12, antChoises: 6, levelNr: 3, timeInterVl: 1.5)
-        }
-        if levelCount == 3{
-            levelBuilder(antButtons: 16, antChoises: 8, levelNr: 4, timeInterVl: 2.0)
-        }
-        if levelCount == 4{
-            levelBuilder(antButtons: 20, antChoises: 8, levelNr: 5, timeInterVl: 2.0)
-        }
-        if levelCount == 5{
-            levelBuilder(antButtons: 24, antChoises: 8, levelNr: 6, timeInterVl: 2.0)
-        }
+        
+        levelBuilder(antButtons: antBtns, antChoises: antChss, levelNr: levelCount, timeInterVl: timeInter)
     }
     
     @IBAction func submitButton(_ sender: UIButton) {
@@ -140,6 +144,10 @@ class LevelBuilderViewController: UIViewController {
         print(comChoises)
         print("you=")
         print(choises)
+        print("level after  \(levelCount)")
+        print("buttons after \(antBtns)")
+        print("choises after \(antChss)")
+        
         
         if choises == comChoises{
             print("next round")
@@ -147,27 +155,56 @@ class LevelBuilderViewController: UIViewController {
            levelCount += 1
             print("Levelcount after \(levelCount)")
             points = points + 5
-            antBtns += 4
-            antChss += 2
+            if levelCount < 7 {
+                antBtns += 4
+                antChss += 1
+                
+            }
+            pointLabel.text = "\(points)p"
+            resetChoises()
+            print("your choises after reset \(choises)")
+            print("com choises after reset \(comChoises)")
+
             
-            submitButton.isHidden = true
-            nextButton.isHidden = false
+            levelBuilder(antButtons: antBtns, antChoises: antChss, levelNr: levelCount, timeInterVl: timeInter)
+            submitButton.isHidden = false
+            startButton.isHidden = true
         }
         else{
             print("try again")
             print("Levelcount \(levelCount)")
-            print("com= \(comChoises)")
-            print("you= \(choises)")
+            print("com choises before disable= \(comChoises)")
+            print("your choises before disable= \(choises)")
+            print("level before disable \(levelCount)")
+            print("buttons before disable \(antBtns)")
+            print("choises before disable \(antChss)")
+            disableAll()
+            print("Comchoises after disable \(comChoises)")
+            print("youchoises after disable \(choises)")
+            print("level after diable \(levelCount)")
+            print("buttons after disable \(antBtns)")
+            print("choises after disable \(antChss)")
             startButton.isHidden = false
             submitButton.isHidden = true
             nextButton.isHidden = true
+            firstTry = false
+            //antBtns += 1
+            //antChss += 1
+            
+            print("buttons after add \(antBtns)")
+            print("choises after add \(antChss)")
+            
             resetChoises()
-            print("Comchoises after fail \(comChoises)")
-            print("youchoises after fail \(choises)")
-            for _ in 0...3{
-               comChoises.removeLast()
-                choises.removeLast()
-            }
+            
+
+            /*if(levelCount != 1){
+                for _ in 0...3{
+                    print("removing button")
+                    comChoises.removeLast()
+                    choises.removeLast()
+                }
+            }*/
+            
             
             for i in 0...23 {
                 buttons[i].setImage(buttonNormal, for: .normal)
