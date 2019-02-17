@@ -15,6 +15,7 @@ class LevelBuilderViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var livesLabel: UILabel!
+    @IBOutlet weak var backTostart: UIButton!
     
     
     
@@ -211,10 +212,26 @@ class LevelBuilderViewController: UIViewController {
                 }
             }
             if antLives == 0 {
-                let alert = UIAlertController(title: "Game over!", message: "You reached level: \(levelCount) and got \(points) points", preferredStyle: .alert)
+                if points > highScoreEasy || points > highScoreHard{
+                    if esyMode == true{
+                        highScoreEasy = points
+                    }
+                    else if hrdMode == true{
+                        highScoreHard = points
+                    }
+                    
+                    let alert = UIAlertController(title: "Game over!", message: "You set a new high score with level: \(levelCount) and \(points) points", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                }
+                else {
+                    let alert = UIAlertController(title: "Game over!", message: "You reached level: \(levelCount) and got \(points) points", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                }
                 
-                alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
-                self.present(alert, animated: true)
                 
                 antLives = 3
                 levelCount = 1
@@ -240,8 +257,12 @@ class LevelBuilderViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToStartScreen" {
             let destinationVC = segue.destination as! startScreeenViewController
-            destinationVC.easyMode.isOn = false
-            print(hrdMode)
+            destinationVC.highscoreEsy = highScoreEasy
+            destinationVC.highscoreHrd = highScoreHard
+            print("High scores: ")
+            print(highScoreHard)
+            print(highScoreEasy
+            )
         }
     }
     
