@@ -10,111 +10,75 @@ import UIKit
 
 class startScreeenViewController: UIViewController {
     @IBOutlet weak var easyMode: UISwitch!
-    @IBOutlet weak var hardMode: UISwitch!
-    @IBOutlet weak var customMode: UISwitch!
     
-    @IBOutlet weak var buttonSlider: UISlider!
-    @IBOutlet weak var choisesSlider: UISlider!
-    @IBOutlet weak var timeSlider: UISlider!
-    
+    @IBOutlet weak var HighScoreHard: UIButton!
+    @IBOutlet weak var HighScoreEasy: UIButton!
     @IBOutlet weak var startGame: UIButton!
-
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var choiseLabel: UILabel!
-    @IBOutlet weak var buttonsLabel: UILabel!
+    @IBOutlet weak var modeField: UITextField!
     
     
-    var gameModeEasy = false, gameModeHard = false, gameModeCustom = false
-    var totButtons = 1, totChoises = 1, totTime = 1.0
+    
+    var gameModeEasy = true, gameModeHard = false
+    var totButtons = 23
+    var totChoises = 2
+    var totTime = 1.0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        easyMode.isOn = false
-        hardMode.isOn = false
-        customMode.isOn = false
-        startGame.isEnabled = false
+        if gameModeEasy == true {
+            easyMode.isOn = true
+        }
+        else if gameModeEasy == false {
+            gameModeHard = true
+            easyMode.isOn = false
+        }
         
         
-        timeLabel.text = "\(totTime)"
-        choiseLabel.text = "\(totChoises)"
-        buttonsLabel.text = "\(totButtons)"
-        buttonSlider.isEnabled = false
-        choisesSlider.isEnabled = false
-        timeSlider.isEnabled = false
-        
+        HighScoreHard.isHidden = true
+        HighScoreEasy.isHidden = false
+        //startGame.isEnabled = true
     }
    
-    
     @IBAction func startGame(_ sender: UIButton) {
         print("choises \(totChoises)")
         print("buttons \(totButtons)")
         print("time \(totTime)")
     }
     
-    
     @IBAction func easyMode(_ sender: UISwitch) {
         if easyMode.isOn == true {
-            startGame.isHidden = false
-            
-            hardMode.isOn = false
-            customMode.isOn = false
-            startGame.isEnabled = true
-            buttonSlider.isEnabled = false
-            choisesSlider.isEnabled = false
-            timeSlider.isEnabled = false
+            //startGame.isHidden = false
+            //startGame.isEnabled = true
+            gameModeEasy = true
+            gameModeHard = false
+            HighScoreEasy.isHidden = false
+            HighScoreHard.isHidden = true
             startGame.setImage(UIImage(named: "greenButton.png"), for: .normal)
             print("antt button on switch= \(totButtons)")
-            totButtons = 4
+            modeField.text = "Easy"
+            totButtons = 23
             totChoises = 2
             totTime = 1.0
         }
-    }
-    @IBAction func hardMode(_ sender: UISwitch) {
-        if hardMode.isOn == true {
+        if easyMode.isOn == false {
+            //startGame.isHidden = false
+            //startGame.isEnabled = true
+            gameModeHard = true
+            gameModeEasy = false
+            HighScoreEasy.isHidden = true
+            HighScoreHard.isHidden = false
+            startGame.setImage(UIImage(named: "redButton.png"), for: .normal)
+            print("antt button on switch= \(totButtons)")
+            modeField.text = "Hard"
             
-            easyMode.isOn = false
-            customMode.isOn = false
-            startGame.isEnabled = true
-
-            buttonSlider.isEnabled = false
-            choisesSlider.isEnabled = false
-            timeSlider.isEnabled = false
-            startGame.setImage(UIImage(named: "redButton.png"),            for: .normal)
             totButtons = 23
-            totChoises = 7
-            totTime = 2
+            totChoises = 10
+            totTime = 1.3
         }
     }
-    @IBAction func customMode(_ sender: UISwitch) {
-        if customMode.isOn == true {
-            
-            easyMode.isOn = false
-            hardMode.isOn = false
-            startGame.isEnabled = true
-
-            startGame.setImage(UIImage(named: "orangeButtonButton.png"), for: .normal)
-            buttonSlider.isEnabled = true
-            choisesSlider.isEnabled = true
-            timeSlider.isEnabled = true
-        }
-    }
-    @IBAction func antButtons(_ sender: UISlider) {
-        totButtons = Int(sender.value)
-        buttonsLabel.text = "\(totButtons)"
-
-    }
-    @IBAction func antChoises(_ sender: UISlider) {
-        totChoises = Int(sender.value)
-        choiseLabel.text = "\(totChoises)"
-
-    }
-    @IBAction func amoTime(_ sender: UISlider) {
-        totTime = Double(sender.value)
-        timeLabel.text = "\(totTime)"
-
-    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToLevelBuilder" {
             let destinationVC = segue.destination as! LevelBuilderViewController
@@ -122,7 +86,7 @@ class startScreeenViewController: UIViewController {
             destinationVC.antBtns = totButtons
             destinationVC.antChss = totChoises
             destinationVC.timeInter = totTime
-            destinationVC.cstmMode = gameModeCustom
+            
             destinationVC.esyMode = gameModeEasy
             destinationVC.hrdMode = gameModeHard
         }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		410B08A7220C7B06007AC897 /* startScreeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B08A6220C7B06007AC897 /* startScreeenViewController.swift */; };
 		410B08A9220C81AA007AC897 /* LevelBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B08A8220C81AA007AC897 /* LevelBuilderViewController.swift */; };
-		410B08AD2212C51C007AC897 /* levelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B08AC2212C51C007AC897 /* levelBuilder.swift */; };
 		41F4AADF21FDAE0C004B38AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F4AADE21FDAE0C004B38AE /* AppDelegate.swift */; };
 		41F4AAE421FDAE0C004B38AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F4AAE221FDAE0C004B38AE /* Main.storyboard */; };
 		41F4AAE621FDAE0D004B38AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F4AAE521FDAE0D004B38AE /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		410B08A6220C7B06007AC897 /* startScreeenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startScreeenViewController.swift; sourceTree = "<group>"; };
 		410B08A8220C81AA007AC897 /* LevelBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBuilderViewController.swift; sourceTree = "<group>"; };
-		410B08AC2212C51C007AC897 /* levelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = levelBuilder.swift; sourceTree = "<group>"; };
 		41F4AADB21FDAE0C004B38AE /* memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F4AADE21FDAE0C004B38AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F4AAE321FDAE0C004B38AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 				41F4AADE21FDAE0C004B38AE /* AppDelegate.swift */,
 				410B08A6220C7B06007AC897 /* startScreeenViewController.swift */,
 				410B08A8220C81AA007AC897 /* LevelBuilderViewController.swift */,
-				410B08AC2212C51C007AC897 /* levelBuilder.swift */,
 				41F4AAE221FDAE0C004B38AE /* Main.storyboard */,
 				41F4AAE521FDAE0D004B38AE /* Assets.xcassets */,
 				41F4AAE721FDAE0D004B38AE /* LaunchScreen.storyboard */,
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410B08AD2212C51C007AC897 /* levelBuilder.swift in Sources */,
 				410B08A7220C7B06007AC897 /* startScreeenViewController.swift in Sources */,
 				410B08A9220C81AA007AC897 /* LevelBuilderViewController.swift in Sources */,
 				41F4AADF21FDAE0C004B38AE /* AppDelegate.swift in Sources */,
