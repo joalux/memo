@@ -13,12 +13,14 @@ class startScreeenViewController: UIViewController {
     
     @IBOutlet weak var startGame: UIButton!
     @IBOutlet weak var modeField: UITextField!
+    @IBOutlet weak var easyScore: UILabel!
+    @IBOutlet weak var hardScore: UILabel!
     
-    @IBOutlet weak var HighScoreEasy: UILabel!
-    @IBOutlet weak var HighScoreHard: UILabel!
+    
+    
     
     var gameModeEasy = true, gameModeHard = false
-    var highscoreEsy = 0, highscoreHrd = 0
+    var highScoreEsy = 0, highScoreHrd = 0
     var totButtons = 23
     var totChoises = 2
     var totTime = 1.0
@@ -26,19 +28,17 @@ class startScreeenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        HighScoreEasy.text = "Easy: \(highscoreEsy)"
-        HighScoreHard.text = "Hard: \(highscoreHrd)"
         if gameModeEasy == true {
             easyMode.isOn = true
-            
         }
         else if gameModeEasy == false {
             gameModeHard = true
             easyMode.isOn = false
         }
+        easyScore.text = "Easy: \(highScoreEsy)"
+        hardScore.text = "Hard: \(highScoreHrd)"
         
-        
-        
+        //startGame.isEnabled = true
     }
    
     @IBAction func startGame(_ sender: UIButton) {
@@ -86,11 +86,11 @@ class startScreeenViewController: UIViewController {
             destinationVC.antChss = totChoises
             destinationVC.timeInter = totTime
             
-            destinationVC.highScoreEasy = highscoreEsy
-            destinationVC.highScoreHard = highscoreHrd
-            
             destinationVC.esyMode = gameModeEasy
             destinationVC.hrdMode = gameModeHard
+            
+            destinationVC.highScoreEasy = highScoreEsy
+            destinationVC.highScoreHard = highScoreHrd
         }
     }
     

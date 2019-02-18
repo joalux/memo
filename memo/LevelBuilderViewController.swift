@@ -15,7 +15,7 @@ class LevelBuilderViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var livesLabel: UILabel!
-    @IBOutlet weak var backTostart: UIButton!
+    @IBOutlet weak var backToMain: UIButton!
     
     
     
@@ -23,6 +23,7 @@ class LevelBuilderViewController: UIViewController {
     var antBtns = 0, antChss = 0, timeInter = 1.5, antLives = 3
     var cstmMode = false, esyMode = false, hrdMode = false
     var firstTry = true, highScoreEasy = 0, highScoreHard = 0
+    var gameOverMessage = ""
     
     var timer = Timer()
     let buttonPressed = UIImage(named: "orangeButton.jpg")
@@ -212,25 +213,34 @@ class LevelBuilderViewController: UIViewController {
                 }
             }
             if antLives == 0 {
-                if points > highScoreEasy || points > highScoreHard{
-                    if esyMode == true{
+                
+                if esyMode == true {
+                    if points > highScoreEasy {
                         highScoreEasy = points
+                        gameOverMessage = "New high score! \n You reached level: \(levelCount) and got \(points) points "
+                        print("New high score!")
                     }
-                    else if hrdMode == true{
+                    else{
+                        gameOverMessage = "You reached level: \(levelCount) and got \(points) points"
+                    }
+                    
+                }
+                else if hrdMode == true {
+                    if points > highScoreHard {
                         highScoreHard = points
+                       gameOverMessage = "New high score! \n You reached level: \(levelCount) and got \(points) points"
+                        print("New high score!")
                     }
-                    
-                    let alert = UIAlertController(title: "Game over!", message: "You set a new high score with level: \(levelCount) and \(points) points", preferredStyle: .alert)
-                    
-                    alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
-                    self.present(alert, animated: true)
+                    else{
+                        gameOverMessage = "You reached level: \(levelCount) and got \(points) points"
+                    }
                 }
-                else {
-                    let alert = UIAlertController(title: "Game over!", message: "You reached level: \(levelCount) and got \(points) points", preferredStyle: .alert)
-                    
-                    alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
-                    self.present(alert, animated: true)
-                }
+                
+                let alert = UIAlertController(title: "Game over!", message: "\(gameOverMessage)", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
+                self.present(alert, animated: true)
+                
                 
                 
                 antLives = 3
@@ -257,12 +267,10 @@ class LevelBuilderViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToStartScreen" {
             let destinationVC = segue.destination as! startScreeenViewController
-            destinationVC.highscoreEsy = highScoreEasy
-            destinationVC.highscoreHrd = highScoreHard
-            print("High scores: ")
-            print(highScoreHard)
-            print(highScoreEasy
-            )
+            //destinationVC.easyMode.isOn = false
+            print("highscores= \(highScoreHard) \(highScoreEasy)" )
+            destinationVC.highScoreHrd = highScoreHard
+            destinationVC.highScoreEsy = highScoreEasy
         }
     }
     
