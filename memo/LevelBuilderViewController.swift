@@ -241,8 +241,6 @@ class LevelBuilderViewController: UIViewController {
                 alert.addAction(UIAlertAction(title: "try again", style: .default, handler: nil))
                 self.present(alert, animated: true)
                 
-                
-                
                 antLives = 3
                 levelCount = 1
                 points = 0
