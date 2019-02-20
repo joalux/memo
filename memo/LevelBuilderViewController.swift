@@ -23,7 +23,9 @@ class LevelBuilderViewController: UIViewController {
     var antBtns = 0, antChss = 0, timeInter = 1.5, antLives = 3
     var cstmMode = false, esyMode = false, hrdMode = false
     var firstTry = true, highScoreEasy = 0, highScoreHard = 0
-    var gameOverMessage = ""
+    var highLevel = 0
+    var gameOverMessage = "New high score! \n You reached level:"
+    var gameOverMessage2 = ""
     
     var timer = Timer()
     let buttonPressed = UIImage(named: "orangeButton.jpg")
@@ -33,6 +35,9 @@ class LevelBuilderViewController: UIViewController {
     var choise: Int?
     var comChoises = [Int]()
     var choises = [Int]()
+    
+    let levelString = NSLocalizedString("Level", comment: "")
+    
 
     
     
@@ -42,8 +47,11 @@ class LevelBuilderViewController: UIViewController {
         submitButton.isHidden = true
         nextButton.isHidden = true
         startButton.isHidden = false
+        levelLabel.text = "\(levelString) 1"
+
         livesLabel.text = "\(antLives) ❤️"
         disableAll()
+        
         if hrdMode == true {
             for i in 0...23{
                 buttons[i].setImage(buttonHardMode
@@ -53,12 +61,6 @@ class LevelBuilderViewController: UIViewController {
             submitButton.setTitleColor(.red, for: .normal)
             nextButton.setTitleColor(.red, for: .normal)
         }
-        
-        
-       // buttons[0].setImage(buttonPressed, for: .normal)
-        
-       
-       
         
     }
     @objc func hideColor() {
@@ -76,7 +78,7 @@ class LevelBuilderViewController: UIViewController {
     }
     
     func levelBuilder(antButtons: Int, antChoises: Int, levelNr: Int, timeInterVl: Double) {
-        levelLabel.text = "Level \(levelNr)"
+        levelLabel.text = "\(levelString) \(levelNr)"
         resetChoises()
         resetColor()
         antBtns = antButtons
@@ -217,8 +219,13 @@ class LevelBuilderViewController: UIViewController {
                 if esyMode == true {
                     if points > highScoreEasy {
                         highScoreEasy = points
-                        gameOverMessage = "New high score! \n You reached level: \(levelCount) and got \(points) points "
+                        highLevel = levelCount
+                        
+                        let str = NSLocalizedString("new_record", comment: "")
+                        gameOverMessage = String(format: str, levelCount, points) //"New high score! \n You reached level: \(levelCount) and got \(points) points "
                         print("New high score!")
+                        UserDefaults.standard.set(levelCount, forKey: "topLevel")
+                         UserDefaults.standard.set(points, forKey: "highScore")
                     }
                     else{
                         gameOverMessage = "You reached level: \(levelCount) and got \(points) points"
@@ -228,7 +235,8 @@ class LevelBuilderViewController: UIViewController {
                 else if hrdMode == true {
                     if points > highScoreHard {
                         highScoreHard = points
-                       gameOverMessage = "New high score! \n You reached level: \(levelCount) and got \(points) points"
+                        highLevel = levelCount
+                       gameOverMessage = "\(gameOverMessage) \(points) points"
                         print("New high score!")
                     }
                     else{
@@ -269,6 +277,7 @@ class LevelBuilderViewController: UIViewController {
             print("highscores= \(highScoreHard) \(highScoreEasy)" )
             destinationVC.highScoreHrd = highScoreHard
             destinationVC.highScoreEsy = highScoreEasy
+            destinationVC.topLevel = highLevel
         }
     }
     

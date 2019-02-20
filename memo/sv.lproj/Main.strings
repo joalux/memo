@@ -1,0 +1,426 @@
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "07o-Ei-WWK"; */
+"07o-Ei-WWK.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "0FK-VO-bjG"; */
+"0FK-VO-bjG.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0aa-j8-ITb"; */
+"0aa-j8-ITb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hard:"; ObjectID = "0lZ-iV-AIc"; */
+"0lZ-iV-AIc.text" = "Svårt:";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "1ZN-Nn-16h"; */
+"1ZN-Nn-16h.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1kg-gy-NHs"; */
+"1kg-gy-NHs.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1qd-r1-e32"; */
+"1qd-r1-e32.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1rN-Jn-zsw"; */
+"1rN-Jn-zsw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "24T-gA-0tD"; */
+"24T-gA-0tD.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Easy"; ObjectID = "2X5-rE-IFK"; */
+"2X5-rE-IFK.text" = "Lätt";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4w4-9S-NSS"; */
+"4w4-9S-NSS.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Ts-F2-QYQ"; */
+"5Ts-F2-QYQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6qs-PZ-HvK"; */
+"6qs-PZ-HvK.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6rD-KX-OHZ"; */
+"6rD-KX-OHZ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6yR-z0-kFi"; */
+"6yR-z0-kFi.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "78p-EX-EUK"; */
+"78p-EX-EUK.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8B8-ee-F77"; */
+"8B8-ee-F77.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8TX-Bc-U8r"; */
+"8TX-Bc-U8r.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8dZ-aS-wYq"; */
+"8dZ-aS-wYq.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9FW-vq-sUN"; */
+"9FW-vq-sUN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9NX-ve-T0L"; */
+"9NX-ve-T0L.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "9SP-EN-VRN"; */
+"9SP-EN-VRN.normalTitle" = "Börja";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9th-xE-aCF"; */
+"9th-xE-aCF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 5"; ObjectID = "A63-Up-I6x"; */
+"A63-Up-I6x.text" = "Level 5";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BAQ-v1-p3n"; */
+"BAQ-v1-p3n.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "BoU-hj-lMq"; */
+"BoU-hj-lMq.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "C4W-TD-ABi"; */
+"C4W-TD-ABi.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Cp6-wC-pnq"; */
+"Cp6-wC-pnq.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Cug-Bk-cck"; */
+"Cug-Bk-cck.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DIx-Ji-CsQ"; */
+"DIx-Ji-CsQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DVL-u8-O0W"; */
+"DVL-u8-O0W.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EFQ-wd-P6N"; */
+"EFQ-wd-P6N.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "Epk-F0-cko"; */
+"Epk-F0-cko.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ew8-io-QNV"; */
+"Ew8-io-QNV.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FRv-HG-M4R"; */
+"FRv-HG-M4R.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "FZv-wc-s1q"; */
+"FZv-wc-s1q.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GNn-pG-RK6"; */
+"GNn-pG-RK6.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GY1-dL-Acb"; */
+"GY1-dL-Acb.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "GvU-LC-5ai"; */
+"GvU-LC-5ai.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HFG-nM-Qvf"; */
+"HFG-nM-Qvf.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Hhp-vB-Uzu"; */
+"Hhp-vB-Uzu.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "I8V-io-2es"; */
+"I8V-io-2es.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "ILO-f1-3Va"; */
+"ILO-f1-3Va.normalTitle" = "Gissa";
+
+/* Class = "UILabel"; text = "High scores"; ObjectID = "Ia5-gH-Oih"; */
+"Ia5-gH-Oih.text" = "Högsta poäng";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "IcU-lk-vFd"; */
+"IcU-lk-vFd.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "J0D-mC-KCb"; */
+"J0D-mC-KCb.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JSf-CQ-5mL"; */
+"JSf-CQ-5mL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JXb-8t-g0Q"; */
+"JXb-8t-g0Q.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Jgq-uX-6tW"; */
+"Jgq-uX-6tW.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LgG-0H-bfV"; */
+"LgG-0H-bfV.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "M4k-Zr-14u"; */
+"M4k-Zr-14u.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "M9K-aa-A42"; */
+"M9K-aa-A42.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MIG-JE-UGn"; */
+"MIG-JE-UGn.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "MUO-xg-CRg"; */
+"MUO-xg-CRg.normalTitle" = "Starta";
+
+/* Class = "UILabel"; text = "0 p"; ObjectID = "Mgd-YF-UHQ"; */
+"Mgd-YF-UHQ.text" = "0 p";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MtS-Kb-dPq"; */
+"MtS-Kb-dPq.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NI8-kD-cPS"; */
+"NI8-kD-cPS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 1"; ObjectID = "NdH-94-MAV"; */
+"NdH-94-MAV.text" = "Level 1";
+
+/* Class = "UILabel"; text = "Level 2"; ObjectID = "NkX-Eq-fcr"; */
+"NkX-Eq-fcr.text" = "Level 2";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "O1r-9u-kb4"; */
+"O1r-9u-kb4.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button2"; ObjectID = "OIl-SO-nUb"; */
+"OIl-SO-nUb.normalTitle" = "Button2";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ON3-LA-9Re"; */
+"ON3-LA-9Re.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "Ocw-Oi-TpM"; */
+"Ocw-Oi-TpM.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Odo-Ld-B6h"; */
+"Odo-Ld-B6h.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OoQ-br-wmn"; */
+"OoQ-br-wmn.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P6p-jL-5s5"; */
+"P6p-jL-5s5.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Q14-83-H2v"; */
+"Q14-83-H2v.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QCH-eW-dRO"; */
+"QCH-eW-dRO.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "Qd1-yj-kZR"; */
+"Qd1-yj-kZR.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Ql5-5R-eGW"; */
+"Ql5-5R-eGW.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "Qqe-HZ-29u"; */
+"Qqe-HZ-29u.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S93-0F-Uae"; */
+"S93-0F-Uae.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TX9-Es-1tp"; */
+"TX9-Es-1tp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Next level"; ObjectID = "Toa-MV-aqI"; */
+"Toa-MV-aqI.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "U5S-lZ-kXF"; */
+"U5S-lZ-kXF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 10"; ObjectID = "Us6-Ch-DPs"; */
+"Us6-Ch-DPs.text" = "Level 10";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "V0w-fN-I6K"; */
+"V0w-fN-I6K.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "VMB-X5-vzQ"; */
+"VMB-X5-vzQ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "VvT-3C-dsb"; */
+"VvT-3C-dsb.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "Vvy-dE-Yeg"; */
+"Vvy-dE-Yeg.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W3z-By-glR"; */
+"W3z-By-glR.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WcD-du-owC"; */
+"WcD-du-owC.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Wsm-cR-Gy9"; */
+"Wsm-cR-Gy9.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WuG-0Q-EDg"; */
+"WuG-0Q-EDg.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "X8J-We-d1w"; */
+"X8J-We-d1w.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "BackToMainbutton"; ObjectID = "XBi-jq-xbh"; */
+"XBi-jq-xbh.normalTitle" = "BackToMainbutton";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XSq-Hp-Z6q"; */
+"XSq-Hp-Z6q.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YDb-vE-CDZ"; */
+"YDb-vE-CDZ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YIt-mr-BaP"; */
+"YIt-mr-BaP.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "ZH4-Ar-6ho"; */
+"ZH4-Ar-6ho.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZND-gU-Tli"; */
+"ZND-gU-Tli.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 8"; ObjectID = "aKQ-2J-bli"; */
+"aKQ-2J-bli.text" = "Level 8";
+
+/* Class = "UILabel"; text = "Dot's"; ObjectID = "b8V-JT-IGh"; */
+"b8V-JT-IGh.text" = "Dot's";
+
+/* Class = "UILabel"; text = "0 ❤️"; ObjectID = "bDB-4R-nq6"; */
+"bDB-4R-nq6.text" = "0 ❤️";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bLv-Uc-Xqg"; */
+"bLv-Uc-Xqg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Easy:"; ObjectID = "bO9-4Q-yan"; */
+"bO9-4Q-yan.text" = "Lätt:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bwg-uT-KlW"; */
+"bwg-uT-KlW.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cXj-Vm-5lb"; */
+"cXj-Vm-5lb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 9"; ObjectID = "co5-Rn-d2a"; */
+"co5-Rn-d2a.text" = "Level 9";
+
+/* Class = "UILabel"; text = "Level 7"; ObjectID = "cwV-az-npp"; */
+"cwV-az-npp.text" = "Level 7";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dIN-Rn-hoB"; */
+"dIN-Rn-hoB.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "diN-jE-ptG"; */
+"diN-jE-ptG.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "e16-R0-wQv"; */
+"e16-R0-wQv.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eB3-wc-clz"; */
+"eB3-wc-clz.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ePc-mo-Ib1"; */
+"ePc-mo-Ib1.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 1"; ObjectID = "eV7-Tl-rDV"; */
+"eV7-Tl-rDV.text" = "Level 1";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fPP-Kq-KuM"; */
+"fPP-Kq-KuM.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gog-Qr-ay7"; */
+"gog-Qr-ay7.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hLp-53-v3A"; */
+"hLp-53-v3A.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ioU-6a-rU5"; */
+"ioU-6a-rU5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 3"; ObjectID = "j58-hn-yg9"; */
+"j58-hn-yg9.text" = "Level 3";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "jCA-Lc-GfS"; */
+"jCA-Lc-GfS.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jNx-nc-z5v"; */
+"jNx-nc-z5v.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Level 6"; ObjectID = "k98-qA-2x4"; */
+"k98-qA-2x4.text" = "Level 6";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kXd-jj-sxP"; */
+"kXd-jj-sxP.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kgW-PM-Rbr"; */
+"kgW-PM-Rbr.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "kp1-mn-2cT"; */
+"kp1-mn-2cT.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ljo-FK-f22"; */
+"ljo-FK-f22.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "nbd-8e-rx6"; */
+"nbd-8e-rx6.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "nhL-wH-c8J"; */
+"nhL-wH-c8J.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "onM-FD-6JI"; */
+"onM-FD-6JI.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qX8-k1-wDU"; */
+"qX8-k1-wDU.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "qvH-zs-wrA"; */
+"qvH-zs-wrA.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rPa-wm-1Wp"; */
+"rPa-wm-1Wp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "rd5-1c-X0b"; */
+"rd5-1c-X0b.normalTitle" = "Gissa";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "roF-Kn-Rcy"; */
+"roF-Kn-Rcy.normalTitle" = "Starta";
+
+/* Class = "UILabel"; text = "Level 4"; ObjectID = "rrV-49-rZN"; */
+"rrV-49-rZN.text" = "Level 4";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tJn-oY-kML"; */
+"tJn-oY-kML.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tgu-xT-L3X"; */
+"tgu-xT-L3X.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uf9-6o-DQ7"; */
+"uf9-6o-DQ7.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uqo-Ie-8jX"; */
+"uqo-Ie-8jX.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uu2-7s-jlG"; */
+"uu2-7s-jlG.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vfW-wt-wyN"; */
+"vfW-wt-wyN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "wFQ-qN-1u7"; */
+"wFQ-qN-1u7.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "nextLevel"; ObjectID = "wif-9S-0Kq"; */
+"wif-9S-0Kq.normalTitle" = "Nästa nivå";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wtD-Bw-e5k"; */
+"wtD-Bw-e5k.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xLp-qO-wvt"; */
+"xLp-qO-wvt.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xNP-Og-MDd"; */
+"xNP-Og-MDd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xZe-ce-ZMP"; */
+"xZe-ce-ZMP.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "yp1-Zj-hSg"; */
+"yp1-Zj-hSg.normalTitle" = "Starta";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zR5-YG-1ks"; */
+"zR5-YG-1ks.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "zhr-Qe-HE8"; */
+"zhr-Qe-HE8.normalTitle" = "Starta";

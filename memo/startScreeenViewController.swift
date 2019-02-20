@@ -10,9 +10,10 @@ import UIKit
 
 class startScreeenViewController: UIViewController {
     @IBOutlet weak var easyMode: UISwitch!
+    @IBOutlet weak var modeLabel: UILabel!
     
     @IBOutlet weak var startGame: UIButton!
-    @IBOutlet weak var modeField: UITextField!
+    
     @IBOutlet weak var easyScore: UILabel!
     @IBOutlet weak var hardScore: UILabel!
     
@@ -21,9 +22,11 @@ class startScreeenViewController: UIViewController {
     
     var gameModeEasy = true, gameModeHard = false
     var highScoreEsy = 0, highScoreHrd = 0
+    var topLevel = 0
     var totButtons = 23
     var totChoises = 2
     var totTime = 1.0
+    
     
     
     override func viewDidLoad() {
@@ -35,8 +38,12 @@ class startScreeenViewController: UIViewController {
             gameModeHard = true
             easyMode.isOn = false
         }
-        easyScore.text = "Easy: \(highScoreEsy)"
-        hardScore.text = "Hard: \(highScoreHrd)"
+        
+        let easy = NSLocalizedString("easy", comment: "")
+        let hard = NSLocalizedString("hard", comment: "")
+        easyScore.text =  "\(easy): \(highScoreEsy)"
+        hardScore.text = "\(hard): \(highScoreHrd)"
+        modeLabel.text = "\(easy)"
         
         //startGame.isEnabled = true
     }
@@ -48,15 +55,19 @@ class startScreeenViewController: UIViewController {
     }
     
     @IBAction func easyMode(_ sender: UISwitch) {
+        let easy = NSLocalizedString("easy", comment: "")
+        let hard = NSLocalizedString("hard", comment: "")
         if easyMode.isOn == true {
             //startGame.isHidden = false
             //startGame.isEnabled = true
             gameModeEasy = true
             gameModeHard = false
             
+            modeLabel.text = "\(easy)"
+
             startGame.setImage(UIImage(named: "greenButton.png"), for: .normal)
             print("antt button on switch= \(totButtons)")
-            modeField.text = "Easy"
+            
             totButtons = 23
             totChoises = 2
             totTime = 1.0
@@ -69,8 +80,7 @@ class startScreeenViewController: UIViewController {
             
             startGame.setImage(UIImage(named: "redButton.png"), for: .normal)
             print("antt button on switch= \(totButtons)")
-            modeField.text = "Hard"
-            
+            modeLabel.text = "\(hard)"
             totButtons = 23
             totChoises = 10
             totTime = 1.3

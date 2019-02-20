@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  memo
+
+  Created by joakim lundberg on 2019-02-20.
+  Copyright © 2019 joakim. All rights reserved.
+*/
+
+"easy" = "easy";
+"hard" = "hard";
+"Level" = "Level";
+"new_record" = "New high score! \n You reached level: %d and got %d points";
