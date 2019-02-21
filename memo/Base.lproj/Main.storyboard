@@ -484,21 +484,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="Toa-MV-aqI" secondAttribute="bottom" constant="116" id="FnH-bN-hBv"/>
-                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="ZH4-Ar-6ho" secondAttribute="bottom" constant="108" id="It9-He-bpA"/>
+                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="yp1-Zj-hSg" secondAttribute="bottom" constant="37" id="2Mm-6d-kN3"/>
                             <constraint firstItem="oCv-3U-t2M" firstAttribute="centerX" secondItem="aP2-FE-Sgw" secondAttribute="centerX" id="L3i-c0-651"/>
                             <constraint firstItem="ZH4-Ar-6ho" firstAttribute="centerX" secondItem="aP2-FE-Sgw" secondAttribute="centerX" id="NUt-iT-Bx5"/>
-                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="yp1-Zj-hSg" secondAttribute="bottom" constant="106" id="U34-eo-um5"/>
+                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="ZH4-Ar-6ho" secondAttribute="bottom" constant="39" id="Sxk-Fv-x6Z"/>
                             <constraint firstItem="Gqq-eY-EXB" firstAttribute="centerX" secondItem="aP2-FE-Sgw" secondAttribute="centerX" id="VXU-1Z-WW0"/>
                             <constraint firstItem="ZH4-Ar-6ho" firstAttribute="top" secondItem="Gqq-eY-EXB" secondAttribute="bottom" constant="35" id="Whr-cO-9hO"/>
                             <constraint firstItem="XBi-jq-xbh" firstAttribute="top" secondItem="Gqq-eY-EXB" secondAttribute="bottom" constant="38" id="YDH-bb-l4c"/>
                             <constraint firstItem="Toa-MV-aqI" firstAttribute="centerX" secondItem="aP2-FE-Sgw" secondAttribute="centerX" id="ZIu-EC-ua7"/>
                             <constraint firstItem="Toa-MV-aqI" firstAttribute="leading" secondItem="XBi-jq-xbh" secondAttribute="trailing" constant="74" id="bdA-tn-4fV"/>
                             <constraint firstItem="Gqq-eY-EXB" firstAttribute="top" secondItem="oCv-3U-t2M" secondAttribute="bottom" constant="19" id="c3l-PN-9dR"/>
+                            <constraint firstItem="Toa-MV-aqI" firstAttribute="top" secondItem="Gqq-eY-EXB" secondAttribute="bottom" constant="27" id="djW-Sm-ajA"/>
                             <constraint firstItem="yp1-Zj-hSg" firstAttribute="top" secondItem="Gqq-eY-EXB" secondAttribute="bottom" constant="37" id="dwC-8p-wEt"/>
                             <constraint firstItem="oCv-3U-t2M" firstAttribute="top" secondItem="ki5-Dh-2i2" secondAttribute="top" constant="18" id="dyM-CY-eKo"/>
                             <constraint firstItem="yp1-Zj-hSg" firstAttribute="centerX" secondItem="aP2-FE-Sgw" secondAttribute="centerX" id="oOy-eJ-1UB"/>
-                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="XBi-jq-xbh" secondAttribute="bottom" constant="127" id="oR1-mg-S6w"/>
+                            <constraint firstItem="ki5-Dh-2i2" firstAttribute="bottom" secondItem="Toa-MV-aqI" secondAttribute="bottom" constant="47" id="xj4-Up-JuC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ki5-Dh-2i2"/>
                     </view>
